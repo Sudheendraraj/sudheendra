@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudheendra Raj Bachawala - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .contact-info a {
+            color: #764ba2;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #667eea;
+        }
+
+        .tagline {
+            color: #666;
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        h2 {
+            color: #667eea;
+            border-bottom: 3px solid #764ba2;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .education-item, .experience-item, .project-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .education-item:hover, .experience-item:hover, .project-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .item-title {
+            font-weight: bold;
+            color: #764ba2;
+            font-size: 1.2em;
+        }
+
+        .item-date {
+            color: #666;
+            font-style: italic;
+        }
+
+        .item-subtitle {
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #764ba2;
+        }
+
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .skill-tag {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+        }
+
+        .cert-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s;
+        }
+
+        .cert-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .cert-title {
+            font-weight: bold;
+            color: #764ba2;
+            margin-bottom: 5px;
+        }
+
+        .cert-org {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .item-header {
+                flex-direction: column;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SUDHEENDRA RAJ BACHAWALA</h1>
+            <div class="contact-info">
+                <a href="tel:+919059035553">📞 +91-9059035553</a>
+                <a href="mailto:Sudheendraraj18@gmail.com">✉️ Sudheendraraj18@gmail.com</a>
+            </div>
+            <p class="tagline">Motivated and detail-oriented B.Tech graduate with a strong foundation in software technologies. Seeking a challenging software development position to leverage my skills through effective collaboration for professional and personal growth.</p>
+        </header>
+
+        <section id="education">
+            <h2>🎓 Education</h2>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Bachelor of Technology - Computer Science Engineering in Data Science</div>
+                        <div class="item-subtitle">Mallareddy Engineering College</div>
+                    </div>
+                    <div class="item-date">2020 - 2024</div>
+                </div>
+                <p><strong>CGPA:</strong> 7.0</p>
+            </div>
+
+            <div class="education-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Intermediate (TSBIE) - Math, Physics, Chemistry</div>
+                        <div class="item-subtitle">Narayana Junior College</div>
+                    </div>
+                    <div class="item-date">2018 - 2020</div>
+                </div>
+                <p><strong>Score:</strong> 87%</p>
+            </div>
+
+            <div class="education-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">SSC</div>
+                        <div class="item-subtitle">Narayana E-Techno School</div>
+                    </div>
+                </div>
+                <p><strong>CGPA:</strong> 8.7</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>💼 Professional Experience</h2>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Full Stack Developer Intern</div>
+                        <div class="item-subtitle">AI Variant</div>
+                    </div>
+                    <div class="item-date">December 2024 - March 2025</div>
+                </div>
+                <p>Successfully completed a Full Stack Developer internship, gaining hands-on experience in front-end and back-end development. Developed web applications, worked with databases, and improved problem-solving skills in a professional environment.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Software Development Intern</div>
+                        <div class="item-subtitle">Skilltimate Technologies</div>
+                    </div>
+                    <div class="item-date">August 2023 - September 2023</div>
+                </div>
+                <p>Acquired hands-on experience with advanced Data Science and Machine Learning technologies. Completed a project during the internship and received certification upon successful completion.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>🛠️ Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>UI Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Database</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Spring</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Microservices</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">SQL Workbench</span>
+                        <span class="skill-tag">Eclipse IDE</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>🚀 Projects</h2>
+            
+            <div class="project-item">
+                <div class="item-title">Data-driven Weather Analysis Prototype for Home Automation with Arduino</div>
+                <p>Implemented a real-time weather monitoring and analysis system integrating Arduino, cloud, and data science for optimized home automation.</p>
+            </div>
+
+            <div class="project-item">
+                <div class="item-title">Optimized Ensemble Technique for Cervical Cancer Prediction Utilizing SMOTE and RFERF</div>
+                <p>Implemented a cervical cancer risk prediction system, achieving superior accuracy through SMOTE, RFERF, and meticulous data preprocessing.</p>
+            </div>
+
+            <div class="project-item">
+                <div class="item-title">Predicting Movie Success Rates with Data Science and Machine Learning Techniques</div>
+                <p>Implemented a machine learning-driven system to predict movie success rates, employing scikit-learn, TensorFlow, and ensemble methods for enhanced accuracy.</p>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h2>📜 Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-item">
+                    <div class="cert-title">Introduction To Python Programming</div>
+                    <div class="cert-org">Microsoft</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-title">Fundamentals of Python</div>
+                    <div class="cert-org">HackerRank</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-title">Fundamentals of Python</div>
+                    <div class="cert-org">Infosys</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-title">Data Analytics and Visualisation Job Simulation</div>
+                    <div class="cert-org">Accenture Forge</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-title">Data Analytics in Python</div>
+                    <div class="cert-org">NPTEL</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-title">Azure Fundamentals</div>
+                    <div class="cert-org">Microsoft</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-title">Full Stack Web Development</div>
+                    <div class="cert-org">EXCELR</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 Sudheendra Raj Bachawala. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
